@@ -32,12 +32,14 @@ do
 	then
 		infile=$MNTPNT'/'$x
 		outfile=$MNTPNT'/'$x.cip
-		openssl enc -base64 -e -in $infile -out $outfile && mv $outfile $infile && rm $outfile &> /dev/null 
+		openssl enc -base64 -e -in $infile -out $outfile 
+		mv $outfile $infile
 	else
 		
 		infile=$MNTPNT'/'$x
 		outfile=$MNTPNT'/'$x.dec
-		openssl enc -base64 -d -in $infile -out $outfile && mv $outfile $infile && rm $outfile &> /dev/null
+		openssl enc -base64 -d -in $infile -out $outfile
+	       	mv $outfile $infile
 	fi
 	
 done
