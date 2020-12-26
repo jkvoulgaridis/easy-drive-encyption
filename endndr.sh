@@ -9,6 +9,7 @@ fi
 DRIVE=$1
 OPT=$2
 
+
 MNTPNT=$(cat /proc/mounts | grep -w  $DRIVE)
 
 if [[ -z $MNTPNT ]]
@@ -16,6 +17,16 @@ then
 	echo 'driver does not exist'
 	exit
 fi
+
+
+if [[ $OPT == 'c' || $OPT == 'd' ]]
+then
+	echo option $OPT passed
+else 
+	echo 'invalid option, c/d  accepted' 
+	exit
+fi
+
 
 IFS=' ' read -ra FF <<< "$MNTPNT" 
 echo "Driver mounting point found : ${FF[1]}"
