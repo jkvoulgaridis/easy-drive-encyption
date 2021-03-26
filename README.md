@@ -1,6 +1,6 @@
 # easy-drive-encyption
 
-This ia a little app for encrypting/decrypting a whole drive. 
+A toy script for encrypting/decrypting a whole drive (recurcively). 
 
 To install type : `git clone <urltorepo>` and substitute <urltorepo> with the url to this repo. 
 
