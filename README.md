@@ -13,7 +13,7 @@ encryption/ decription ops use openssl suite.
 
 ## NEXT STEPS:
 
-Current version supports 1 level of hierarchy. My goal is to make this app usefull for real-lide
+Current version supports 1 level of hierarchy. Next version  will make it usefull for real-lide
 hierchical drives (containing files, folders, folders of folders and so on and so for)
 
 ## Disclaimer: 
